@@ -4,7 +4,7 @@
   "description": "HTML5/CSS layout with HTMLHint and StyleLint",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-gunderin/layout-designer-project-lvl1.git",
+    "url": "https://github.com/a-gunderin/layout-designer-project-lvl1.git"
   },
   "main": "",
   "devDependencies": {
