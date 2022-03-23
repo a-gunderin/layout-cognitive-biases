@@ -7,6 +7,11 @@
     "url": "https://github.com/a-gunderin/layout-designer-project-lvl1.git"
   },
   "main": "",
+  "scripts": {
+    "slint": "npx stylelint ./src/styles/*.css",
+    "slint-fix": "npx stylelint ./src/styles/*.css --fix",
+    "hlint": "npx htmlhint ./src/*.html"
+  },
   "devDependencies": {
     "htmlhint": "^1.1.0",
     "stylelint": "^14.2.0",
