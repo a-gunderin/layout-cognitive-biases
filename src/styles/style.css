@@ -15,10 +15,71 @@
 	--title-font: "Neucha", verdana, sans-serif;
 }
 
+/* Positioning properties */
+
+/* Properties that define box-model */
 .minh-100vh {
 	min-height: 100vh;
 }
 
+.w-100 {
+	width: 100%;
+}
+
+.max-w-1110 {
+	max-width: 1110px;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+.mr-auto {
+	margin-right: auto;
+}
+
+.pt-100 {
+	padding-top: 100px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+/* Typography properties */
+.ff-main {
+	font-family: var(--main-font);
+}
+
+.ff-title {
+	font-family: var(--title-font);
+}
+
+.fsz-16 {
+	font-size: 16px;
+}
+
+.fsz-72 {
+	font-size: 72px;
+}
+
+.fsz-60 {
+	font-size: 60px;
+}
+
+.fsz-34 {
+	font-size: 34px;
+}
+
+.lh-1-6em {
+	line-height: 1.6em;
+}
+
+.lh-1-2em {
+	line-height: 1.2em;
+}
+
+/* Properties that determine visual appearance */
 .bg-im-main {
 	background-image: url("../images/background.png"), url("../images/main.png");
 }
@@ -34,3 +95,11 @@
 .bgc-grey-1 {
 	background-color: var(--grey);
 }
+
+.color-dark-2 {
+	color: var(--dark-2);
+}
+
+/* Properties of animation */
+
+/* Properties that don't fall into any category */
