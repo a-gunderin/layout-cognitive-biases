@@ -1,7 +1,36 @@
-/** CSS STYLE **/
+:root {
+	/* Colors */
+	--white: #fff;
+	--white-2: #d7ccc0;
+	--grey: #f5f4f0;
+	--main-color: #fe8a02;
+	--dark: #42413c;
+	--dark-2: #2a2626;
+	--dark-3: #908d8b;
+	--brown: #b09a81;
+	--blue: #1085c5;
 
-.hello {
-  display: block;
+	/* Fonts */
+	--main-font: "Open Sans", verdana, sans-serif;
+	--title-font: "Neucha", verdana, sans-serif;
+}
 
-  color: #fff;
+.minh-100vh {
+	min-height: 100vh;
+}
+
+.bg-im-main {
+	background-image: url("../images/background.png"), url("../images/main.png");
+}
+
+.bgr-no-r {
+	background-repeat: no-repeat;
+}
+
+.bgs-cover {
+	background-size: cover;
+}
+
+.bgc-grey-1 {
+	background-color: var(--grey);
 }
