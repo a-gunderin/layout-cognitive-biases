@@ -4,6 +4,7 @@
 	--white-2: #d7ccc0;
 	--grey: #f5f4f0;
 	--main-color: #fe8a02;
+	--main-color-dark: #ea7600;
 	--dark: #42413c;
 	--dark-2: #2a2626;
 	--dark-3: #908d8b;
@@ -16,10 +17,57 @@
 }
 
 /* Positioning properties */
+.pos-r {
+	position: relative;
+}
+
+.pos-a {
+	position: absolute;
+}
+
+.t-55 {
+	top: 55px;
+}
+
+.r-m270 {
+	right: -270px;
+}
+
+.z-10 {
+	z-index: 10;
+}
+
+.z-m10 {
+	z-index: -10;
+}
+
+.col-count-2 {
+	column-count: 2;
+}
+
+.col-gap-30 {
+	column-gap: 30px;
+}
+
+.br-ins-av {
+	break-inside: avoid;
+}
+
+.br-aft-col {
+	break-after: column;
+}
 
 /* Properties that define box-model */
-.minh-100vh {
+.d-ib {
+	display: inline-block;
+}
+
+.min-h-100vh {
 	min-height: 100vh;
+}
+
+.h-525 {
+	height: 525px;
 }
 
 .w-100 {
@@ -30,6 +78,26 @@
 	max-width: 1110px;
 }
 
+.mt-0 {
+	margin-top: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-185 {
+	margin-bottom: 185px;
+}
+
 .ml-auto {
 	margin-left: auto;
 }
@@ -38,12 +106,28 @@
 	margin-right: auto;
 }
 
+.pt-12 {
+	padding-top: 12px;
+}
+
 .pt-100 {
 	padding-top: 100px;
 }
 
+.pb-12 {
+	padding-bottom: 12px;
+}
+
 .pb-100 {
 	padding-bottom: 100px;
+}
+
+.pl-26 {
+	padding-left: 26px;
+}
+
+.pr-26 {
+	padding-right: 26px;
 }
 
 /* Typography properties */
@@ -55,33 +139,49 @@
 	font-family: var(--title-font);
 }
 
+.fw-400 {
+	font-weight: 400;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
 .fsz-16 {
 	font-size: 16px;
-}
-
-.fsz-72 {
-	font-size: 72px;
-}
-
-.fsz-60 {
-	font-size: 60px;
 }
 
 .fsz-34 {
 	font-size: 34px;
 }
 
-.lh-1-6em {
-	line-height: 1.6em;
+.fsz-60 {
+	font-size: 60px;
+}
+
+.fsz-72 {
+	font-size: 72px;
 }
 
 .lh-1-2em {
 	line-height: 1.2em;
 }
 
+.lh-1-6em {
+	line-height: 1.6em;
+}
+
+.td-n {
+	text-decoration: none;
+}
+
+.tt-up {
+	text-transform: uppercase;
+}
+
 /* Properties that determine visual appearance */
 .bg-im-main {
-	background-image: url("../images/background.png"), url("../images/main.png");
+	background-image: url("../images/background.png");
 }
 
 .bgr-no-r {
@@ -96,10 +196,69 @@
 	background-color: var(--grey);
 }
 
+.bgc-main {
+	background-color: var(--main-color);
+}
+
+.color-main {
+	color: var(--main-color);
+}
+
 .color-dark-2 {
 	color: var(--dark-2);
+}
+
+.color-white {
+	color: var(--white);
+}
+
+.ov-h {
+	overflow: hidden;
 }
 
 /* Properties of animation */
 
 /* Properties that don't fall into any category */
+.bef::before {
+	content: "";
+}
+
+.bef-pos-a::before {
+	position: absolute;
+}
+
+.bef-t-0::before {
+	top: 0;
+}
+
+.bef-l-0::before {
+	left: 0;
+}
+
+.bef-r-0::before {
+	right: 0;
+}
+
+.bef-b-0::before {
+	bottom: 0;
+}
+
+.bef-bgi-main::before {
+	background-image: url("../images/background.png");
+}
+
+.bef-bgs-cover::before {
+	background-size: cover;
+}
+
+.bef-bgr-no-r::before {
+	background-repeat: no-repeat;
+}
+
+.bef-opa-06::before {
+	opacity: 0.06;
+}
+
+.hov-bgc-main-dark:hover {
+	background-color: var(--main-color-dark);
+}
