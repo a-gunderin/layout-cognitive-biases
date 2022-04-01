@@ -10,6 +10,7 @@
 	--dark-3: #908d8b;
 	--brown: #b09a81;
 	--blue: #1085c5;
+	--black: #000;
 
 	/* Fonts */
 	--main-font: "Open Sans", verdana, sans-serif;
@@ -58,6 +59,10 @@
 }
 
 /* Properties that define box-model */
+.d-b {
+	display: block;
+}
+
 .d-ib {
 	display: inline-block;
 }
@@ -70,8 +75,16 @@
 	flex-wrap: wrap;
 }
 
+.flx-grw-1 {
+	flex-grow: 1;
+}
+
 .js-cont-spc-btw {
 	justify-content: space-between;
+}
+
+.js-cont-cntr {
+	justify-content: center;
 }
 
 .ai-c {
@@ -88,6 +101,10 @@
 
 .h-569 {
 	height: 569px;
+}
+
+.h-50 {
+	height: 50px;
 }
 
 .w-100 {
@@ -114,8 +131,20 @@
 	max-width: 500px;
 }
 
+.max-w-475 {
+	max-width: 475px;
+}
+
 .max-w-350 {
 	max-width: 350px;
+}
+
+.max-w-70 {
+	max-width: 70px;
+}
+
+.max-w-20 {
+	max-width: 20px;
 }
 
 .bx-sz-bd-bx {
@@ -126,12 +155,20 @@
 	margin-top: 0;
 }
 
+.mt-5 {
+	margin-top: 5px;
+}
+
 .mt-100 {
 	margin-top: 100px;
 }
 
 .mb-0 {
 	margin-bottom: 0;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
 }
 
 .mb-15 {
@@ -154,6 +191,10 @@
 	margin-bottom: 40px;
 }
 
+.mb-75 {
+	margin-bottom: 75px;
+}
+
 .mb-m50 {
 	margin-bottom: -50px;
 }
@@ -168,6 +209,10 @@
 
 .mr-auto {
 	margin-right: auto;
+}
+
+.pt-0 {
+	padding-top: 0;
 }
 
 .pt-5 {
@@ -198,6 +243,10 @@
 	padding-top: 166px;
 }
 
+.pb-0 {
+	padding-bottom: 0;
+}
+
 .pb-5 {
 	padding-bottom: 5px;
 }
@@ -218,8 +267,16 @@
 	padding-bottom: 100px;
 }
 
+.pb-110 {
+	padding-bottom: 110px;
+}
+
 .pl-10 {
 	padding-left: 10px;
+}
+
+.pl-15 {
+	padding-left: 15px;
 }
 
 .pl-24 {
@@ -234,6 +291,10 @@
 	padding-left: 55px;
 }
 
+.pr-15 {
+	padding-right: 15px;
+}
+
 .pr-24 {
 	padding-right: 24px;
 }
@@ -244,6 +305,10 @@
 
 .pr-55 {
 	padding-right: 55px;
+}
+
+.bd-0 {
+	border: 0;
 }
 
 /* Typography properties */
@@ -263,12 +328,20 @@
 	font-weight: 700;
 }
 
+.fsz-12 {
+	font-size: 12px;
+}
+
 .fsz-14 {
 	font-size: 14px;
 }
 
 .fsz-16 {
 	font-size: 16px;
+}
+
+.fsz-18 {
+	font-size: 18px;
 }
 
 .fsz-24 {
@@ -352,6 +425,10 @@
 	color: var(--main-color);
 }
 
+.color-dark {
+	color: var(--dark);
+}
+
 .color-dark-2 {
 	color: var(--dark-2);
 }
@@ -372,6 +449,14 @@
 	color: var(--brown);
 }
 
+.color-black {
+	color: var(--black);
+}
+
+.color-blue {
+	color: var(--blue);
+}
+
 .ov-h {
 	overflow: hidden;
 }
@@ -380,7 +465,22 @@
 	box-shadow: 0 16px 32px rgb(0 0 0 / 15%);
 }
 
+.cur-poi {
+	cursor: pointer;
+}
+
 /* Properties of animation */
+.trs-dur-03 {
+	transition-duration: 0.3s;
+}
+
+.trs-dur-05 {
+	transition-duration: 0.5s;
+}
+
+.trs-prop-bgc {
+	transition-property: background-color;
+}
 
 /* Properties that don't fall into any category */
 .bef::before {
@@ -423,6 +523,34 @@
 	opacity: 0.06;
 }
 
+.hov-bgc-main:hover {
+	background-color: var(--main-color);
+}
+
 .hov-bgc-main-dark:hover {
 	background-color: var(--main-color-dark);
+}
+
+.ph-fsz-13::placeholder {
+	font-size: 13px;
+}
+
+.ph-color::placeholder {
+	color: rgb(117 117 117 / 20%);
+}
+
+.fcs-vis-outl-col-main-dark:focus-visible {
+	outline-color: var(--main-color-dark);
+}
+
+.fcs-vis-outl-stl-dshd:focus-visible {
+	outline-style: dashed;
+}
+
+.fcs-vis-outl-ofst-m2 {
+	outline-offset: -2px;
+}
+
+.card:hover > * {
+	color: var(--white);
 }
