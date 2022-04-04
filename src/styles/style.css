@@ -461,8 +461,8 @@
 	overflow: hidden;
 }
 
-.bx-shdw {
-	box-shadow: 0 16px 32px rgb(0 0 0 / 15%);
+.fltr-drp-shdw {
+	filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .cur-poi {
@@ -511,12 +511,24 @@
 	background-image: url("../images/background.png");
 }
 
+.bef-bgi-send::before {
+	background-image: url("../images/send.svg");
+}
+
 .bef-bgs-cover::before {
 	background-size: cover;
 }
 
 .bef-bgr-no-r::before {
 	background-repeat: no-repeat;
+}
+
+.bef-bgr-pos-cntr::before {
+	background-position: center;
+}
+
+.bef-bgr-size-20::before {
+	background-size: 20px;
 }
 
 .bef-opa-06::before {
