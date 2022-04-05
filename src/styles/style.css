@@ -8,6 +8,7 @@
 	--dark: #42413c;
 	--dark-2: #2a2626;
 	--dark-3: #908d8b;
+	--dark-4: #212529;
 	--brown: #b09a81;
 	--blue: #1085c5;
 	--black: #000;
@@ -179,12 +180,16 @@
 	margin-bottom: 20px;
 }
 
-.mb-27 {
-	margin-bottom: 27px;
-}
-
 .mb-30 {
 	margin-bottom: 30px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mb-34 {
+	margin-bottom: 34px;
 }
 
 .mb-40 {
@@ -435,6 +440,10 @@
 
 .color-dark-3 {
 	color: var(--dark-3);
+}
+
+.color-dark-4 {
+	color: var(--dark-4);
 }
 
 .color-white {
