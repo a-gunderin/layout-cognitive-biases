@@ -576,16 +576,16 @@
 	color: var(--white);
 }
 
-@media(max-width:  1199px) {
+@media (max-width: 1199px) {
 	header,
 	main,
 	footer {
-		display: none
+		display: none;
 	}
 }
 
-@media(min-width:  1200px) {
+@media (min-width: 1200px) {
 	.media-notification {
-		display: none
+		display: none;
 	}
 }
