@@ -575,3 +575,17 @@
 .card:hover > * {
 	color: var(--white);
 }
+
+@media(max-width:  1199px) {
+	header,
+	main,
+	footer {
+		display: none
+	}
+}
+
+@media(min-width:  1200px) {
+	.media-notification {
+		display: none
+	}
+}
